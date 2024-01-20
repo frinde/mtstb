@@ -199,7 +199,7 @@ body {
     padding: 2px;
 }
 
-@media (max-width:961px) {
+@media (max-width:1200px) {
     .inner {
         margin-left: 0%;
         margin-right: 0%;
@@ -208,7 +208,23 @@ body {
 }
 
 @media (max-width:600px) {
+    .menu {
+        width: 120px;
+    }
+
+    .menu a {
+        font-size: 0.6rem;
+    }
+
     .list-implant a {
         font-size: 0.6rem;
+    }
+
+    .list-implant {
+        gap: 12px;
+    }
+
+    .path {
+        font-size: 0.5rem;
     }
 }
