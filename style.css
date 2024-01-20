@@ -199,6 +199,39 @@ body {
     padding: 2px;
 }
 
+.query-div {
+    width: auto;
+    height: 300px;
+}
+
+.query-div p {
+    margin: 0;
+    margin-top: 12px;
+    padding: 3px;
+    width: fit-content;
+    position: relative;
+    font-size: 0.7rem;
+    color: #243651;
+}
+
+.query-div p span {
+    position: absolute;
+    cursor: pointer;
+    white-space: nowrap;
+    width: fit-content;
+    height: auto;
+    margin-left: 7px;
+    color: #7348bf;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 0.5rem;
+    transform: translateY(0px);
+    border: 1.3px solid #7348bf;
+    text-align: left;
+    padding: 2px;
+
+}
+
 @media (max-width:1200px) {
     .inner {
         margin-left: 0%;
@@ -226,5 +259,13 @@ body {
 
     .path {
         font-size: 0.5rem;
+    }
+
+    .query-div p {
+        font-size: 0.6rem;
+    }
+
+    .query-div p span {
+        font-size: 0.3rem;
     }
 }
