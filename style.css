@@ -201,7 +201,7 @@ body {
 
 .query-div {
     width: auto;
-    height: 300px;
+    height: fit-content;
 }
 
 .query-div p {
@@ -230,6 +230,49 @@ body {
     text-align: left;
     padding: 2px;
 
+}
+
+.query-div p span:hover {
+    background-color: #7348bf;
+    color: white;
+    font-weight: 500;
+}
+
+.count-factor {
+    width: auto;
+    height: fit-content;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    border-bottom: 1px solid rgb(174, 174, 174);
+}
+
+.count-factor h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #243651;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+}
+
+.count-factor h1 p {
+    margin: 0;
+    font-weight: 600;
+    transform: translateY(20px);
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+
+.count-factor h1 span {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.5rem;
+    font-weight: 600;
+    transform: translateY(8px);
+    white-space: nowrap;
+    color: #9ea4ac;
 }
 
 @media (max-width:1200px) {
@@ -267,5 +310,18 @@ body {
 
     .query-div p span {
         font-size: 0.3rem;
+    }
+
+    .count-factor h1 {
+        font-size: 1.5rem;
+    }
+
+    .count-factor h1 p {
+        font-size: 0.5rem;
+    }
+
+    .count-factor h1 span {
+        font-size: 0.4rem;
+        transform: translateY(4px);
     }
 }
