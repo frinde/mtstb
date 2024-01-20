@@ -200,6 +200,7 @@ body {
 }
 
 .query-div {
+    margin-top: 20px;
     width: auto;
     height: fit-content;
 }
@@ -278,7 +279,8 @@ body {
 .details-factor {
     margin-top: 12px;
     width: auto;
-    height: 100px;
+    height: fit-content;
+    border-bottom: 1px solid rgb(189, 189, 189);
 }
 
 .details-factor p:hover {
@@ -356,6 +358,70 @@ body {
     background-color: #f5f2ff;
 }
 
+.chart-factor {
+    width: auto;
+    margin-top: 20px;
+    height: fit-content;
+    border-left: 1px solid rgb(190, 190, 190);
+    padding-left: 7px;
+}
+
+.chart-factor h1 {
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    white-space: nowrap;
+    gap: 12px;
+    color:#0E1523 ;
+    margin-bottom: 40px;
+}
+
+.chart-factor h1 i {
+    padding: 6px;
+    border-radius: 6px;
+    height: fit-content;
+    background-color: #11c67e;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.chart-factor div{
+    width: 90%;
+    display: flex;
+    height: 20px;
+    gap: 3px;
+}
+
+.chart-factor p {
+    font-size: 0.8rem;
+}
+
+.factorial-filled {
+    width: 100%;
+    height: fit-content;
+    font-size: 0.6rem;
+    color: white;
+    padding-left: 5px;
+    background-color: #00A965;
+    transition: 0.2s transform;
+    border-radius: 4px;
+}
+
+.factorial-filled:hover {
+    transform: scale(99%);
+    background-color: #098b57;
+}
+
+.factorial-empty {
+    width: 40%;
+    border-radius: 12px;
+    height: fit-content;
+    font-size: 0.6rem;
+    color: white;
+    padding-left: 5px;
+    background-color: #EB1B1B;
+}
+
 @media (max-width:1200px) {
     .inner {
         margin-left: 0%;
@@ -412,5 +478,20 @@ body {
 
     .details-factor p {
         font-size: 0.5rem;
+    }
+
+    .chart-factor p {
+        font-size: 0.6rem;
+    }
+
+    .chart-factor h1 {
+        font-size: 0.7rem;
+        gap: 5px;
+    }
+
+    .chart-factor h1 i {
+        border-radius: 3px;
+        font-size: 0.6rem;
+        padding: 4px;
     }
 }
