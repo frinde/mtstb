@@ -329,7 +329,7 @@ body {
 }
 
 .selesai::after {
-    content: "selesai";
+    content: "Selesai";
     display: block;
     width: fit-content;
     height: auto;
@@ -354,6 +354,19 @@ body {
     background-color: #f4b018;
 }
 
+.dibatalkan::after {
+    content: "Dibatalkan";
+    display: block;
+    width: fit-content;
+    height: auto;
+    padding: 2px;
+    font-size: 0.5rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: #f82504;
+}
+
 .details-factor p:nth-child(even) {
     background-color: #f5f2ff;
 }
@@ -373,7 +386,7 @@ body {
     white-space: nowrap;
     gap: 12px;
     color:#0E1523 ;
-    margin-bottom: 40px;
+    margin-bottom:10px;
 }
 
 .chart-factor h1 i {
@@ -419,7 +432,7 @@ body {
     font-size: 0.6rem;
     color: white;
     padding-left: 5px;
-    background-color: #EB1B1B;
+    background-color: #a6a6a6;
 }
 
 @media (max-width:1200px) {
