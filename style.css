@@ -118,7 +118,7 @@ body {
 
 
 .list-implant {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -291,7 +291,7 @@ body {
 .details-factor h2 {
     margin: 0;
     font-size: 0.7rem;
-    gap: 50%;
+    justify-content: space-between;
     margin-bottom: 10px;
     display: flex;
 }
@@ -312,7 +312,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content:space-between;
 }
 
 .aktif::after {
@@ -320,6 +320,7 @@ body {
     display: block;
     width: fit-content;
     height: auto;
+    margin-right: 12px;
     padding: 2px;
     font-size: 0.5rem;
     color: white;
@@ -332,6 +333,7 @@ body {
     content: "Selesai";
     display: block;
     width: fit-content;
+    margin-right: 12px;
     height: auto;
     padding: 3px;
     font-size: 0.5rem;
@@ -346,6 +348,7 @@ body {
     display: block;
     width: fit-content;
     height: auto;
+    margin-right: 12px;
     padding: 2px;
     font-size: 0.5rem;
     color: black;
@@ -358,17 +361,18 @@ body {
     content: "Dibatalkan";
     display: block;
     width: fit-content;
+    margin-right: 12px;
     height: auto;
     padding: 2px;
     font-size: 0.5rem;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 3px;
-    background-color: #f82504;
+    background-color: #141414;
 }
 
 .details-factor p:nth-child(even) {
-    background-color: #f5f2ff;
+    background-color: #fcfcfc;
 }
 
 .chart-factor {
@@ -383,6 +387,7 @@ body {
     margin: 0;
     margin-top: 20px;
     display: flex;
+    font-size: 0.9rem;
     white-space: nowrap;
     gap: 12px;
     color:#0E1523 ;
@@ -427,12 +432,28 @@ body {
 
 .factorial-empty {
     width: 40%;
-    border-radius: 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     height: fit-content;
     font-size: 0.6rem;
     color: white;
     padding-left: 5px;
     background-color: #a6a6a6;
+}
+
+.chart-factor h4 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    width: 350px;
+    height: fit-content;
+}
+
+.chart-factor i {
+    padding: 3px;
+    margin: 2px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 @media (max-width:1200px) {
@@ -445,19 +466,24 @@ body {
 
 @media (max-width:800px) {
     .menu {
-        width: 120px;
+        display: none;
     }
 
-    .menu a {
-        font-size: 0.6rem;
+    .menu-mobile {
+        display: block;
     }
 
+    .implant {
+        padding-left: 2px;
+    }
+    
     .list-implant a {
         font-size: 0.6rem;
+        border: 1px solid rgb(211, 211, 211);
     }
 
     .list-implant {
-        gap: 12px;
+        gap: 0px;
     }
 
     .path {
@@ -506,5 +532,10 @@ body {
         border-radius: 3px;
         font-size: 0.6rem;
         padding: 4px;
+    }
+
+    .chart-factor h4 {
+        font-size: 0.5rem;
+        width: 250px;
     }
 }
